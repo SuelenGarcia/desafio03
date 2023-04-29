@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class ThemeTextExtension extends ThemeExtension<ThemeTextExtension> {
+class TextThemeExtension extends ThemeExtension<TextThemeExtension> {
   final TextStyle searchCardTextStyle;
-  final TextStyle badgeTextStyle;
+  final TextStyle unreadMessageTextStyle;
   final TextStyle filterSectionTextStyle;
   final TextStyle userNameTextStyle;
   final TextStyle phoneNumberTextStyle;
   final TextStyle hourTextStyle;
   final TextStyle userBioTextStyle;
-  final TextStyle abilityTextStyle;
+  final TextStyle skillTextStyle;
   final TextStyle taskTitleStyle;
   final TextStyle taskDateStyle;
   final TextStyle userNameChatPageTextStyle;
@@ -17,15 +17,15 @@ class ThemeTextExtension extends ThemeExtension<ThemeTextExtension> {
   final TextStyle filterButtonSelectedTextStyle;
   final TextStyle filterButtonUnselectedTextStyle;
 
-  ThemeTextExtension({
+  TextThemeExtension({
     required this.searchCardTextStyle,
-    required this.badgeTextStyle,
+    required this.unreadMessageTextStyle,
     required this.filterSectionTextStyle,
     required this.userNameTextStyle,
     required this.phoneNumberTextStyle,
     required this.hourTextStyle,
     required this.userBioTextStyle,
-    required this.abilityTextStyle,
+    required this.skillTextStyle,
     required this.taskTitleStyle,
     required this.taskDateStyle,
     required this.userNameChatPageTextStyle,
@@ -36,15 +36,15 @@ class ThemeTextExtension extends ThemeExtension<ThemeTextExtension> {
   });
 
   @override
-  ThemeExtension<ThemeTextExtension> lerp(
-    covariant ThemeExtension<ThemeTextExtension>? other,
+  ThemeExtension<TextThemeExtension> lerp(
+    covariant ThemeExtension<TextThemeExtension>? other,
     double t,
   ) {
     throw UnimplementedError();
   }
 
   @override
-  ThemeExtension<ThemeTextExtension> copyWith() {
+  ThemeExtension<TextThemeExtension> copyWith() {
     throw UnimplementedError();
   }
 }

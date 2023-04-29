@@ -5,8 +5,8 @@ import 'extensions/text_theme_extension.dart';
 
 class CustomTheme {
   static ThemeData theme = ThemeData.dark().copyWith(
-    //o copyWith é um construtor que retorna uma nova instância do objeto 
-    //substituindo os itens que precisam ser alterados e repetindo os itens 
+    //o copyWith é um construtor que retorna uma nova instância do objeto
+    //substituindo os itens que precisam ser alterados e repetindo os itens
     //que não sofreram alteração
     scaffoldBackgroundColor: ColorsTheme.darkGrey,
     appBarTheme: const AppBarTheme(
@@ -22,23 +22,23 @@ class CustomTheme {
     ),
     extensions: <ThemeExtension<dynamic>>[
       ColorsThemeExtension(
-        backgrounddColor: ColorsTheme.darkGrey,
+        backgroundColor: ColorsTheme.darkGrey,
         appBarButtonColor: ColorsTheme.grey,
         searchCardColor: ColorsTheme.almostBlack,
         sendMessageCardColor: ColorsTheme.almostBlack,
         bottomNavigatorColor: ColorsTheme.almostBlack,
-        onlineColor: ColorsTheme.green,
-        profileBGColor: ColorsTheme.purple,
+        statusColor: ColorsTheme.green,
+        profileBackgroundColor: ColorsTheme.purple,
         marginTaskColor: ColorsTheme.amber,
         sendMessageButtonColor: ColorsTheme.amber,
-        taskUndoneBGColor: ColorsTheme.almostBlack,
-        taskDoneBGColor: ColorsTheme.black,
+        taskUndoneBackgroundColor: ColorsTheme.almostBlack,
+        taskDoneBackgroundColor: ColorsTheme.black,
         taskButtonUndoneColor: ColorsTheme.almostBlack,
         taskButtonDoneColor: ColorsTheme.amber,
         filterButtonSelectedColor: ColorsTheme.amber,
         filterButtonUnselectedColor: ColorsTheme.transparent,
-        badgeSelectedColor: ColorsTheme.purple,
-        badgeUnselectedColor: ColorsTheme.mediumGrey,
+        unreadMessageSelectedColor: ColorsTheme.purple,
+        unreadMessageUnselectedColor: ColorsTheme.mediumGrey,
         bottomNavButtonSelectedColor: ColorsTheme.amber,
         bottomNavButtonUnselectedColor: ColorsTheme.transparent,
         profileButtonAvailableColor: ColorsTheme.mediumPurple,
@@ -51,7 +51,7 @@ class CustomTheme {
         whiteIconsColor: ColorsTheme.white,
         blackIconsColor: ColorsTheme.black,
         greyIconsColor: ColorsTheme.grey,
-        abilitiesColors: [
+        skillsColors: [
           ColorsTheme.mediumPurple,
           ColorsTheme.darkPurple,
           ColorsTheme.darkGrey,
@@ -60,12 +60,12 @@ class CustomTheme {
         ],
         errorColor: ColorsTheme.errorColor,
       ),
-      ThemeTextExtension(
+      TextThemeExtension(
         searchCardTextStyle: const TextStyle(
           fontSize: 18,
           color: ColorsTheme.grey,
         ),
-        badgeTextStyle: const TextStyle(
+        unreadMessageTextStyle: const TextStyle(
           fontSize: 13,
           color: ColorsTheme.white,
         ),
@@ -91,7 +91,7 @@ class CustomTheme {
           fontSize: 15,
           color: ColorsTheme.grey,
         ),
-        abilityTextStyle: const TextStyle(
+        skillTextStyle: const TextStyle(
           fontSize: 16,
           color: ColorsTheme.white,
         ),
@@ -123,7 +123,8 @@ class CustomTheme {
         filterButtonUnselectedTextStyle: const TextStyle(
           fontSize: 17,
           color: ColorsTheme.grey,
-        ),),
-      ],
+        ),
+      ),
+    ],
   );
 }

@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
 class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
-  final Color backgrounddColor;
+  final Color backgroundColor;
   final Color appBarButtonColor;
   final Color searchCardColor;
   final Color sendMessageCardColor;
   final Color bottomNavigatorColor;
-  final Color onlineColor;
-  final Color profileBGColor;
+  final Color statusColor;
+  final Color profileBackgroundColor;
   final Color marginTaskColor;
   final Color sendMessageButtonColor;
-  final Color taskUndoneBGColor;
-  final Color taskDoneBGColor;
+  final Color taskUndoneBackgroundColor;
+  final Color taskDoneBackgroundColor;
   final Color taskButtonUndoneColor;
   final Color taskButtonDoneColor;
   final Color filterButtonSelectedColor;
   final Color filterButtonUnselectedColor;
-  final Color badgeSelectedColor;
-  final Color badgeUnselectedColor;
+  final Color unreadMessageSelectedColor;
+  final Color unreadMessageUnselectedColor;
   final Color bottomNavButtonSelectedColor;
   final Color bottomNavButtonUnselectedColor;
   final Color profileButtonAvailableColor;
@@ -31,26 +31,26 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
   final Color blackIconsColor;
   final Color greyIconsColor;
   final Color errorColor;
-  final List<Color> abilitiesColors;
+  final List<Color> skillsColors;
 
   ColorsThemeExtension({
-    required this.backgrounddColor,
+    required this.backgroundColor,
     required this.appBarButtonColor,
     required this.searchCardColor,
     required this.sendMessageCardColor,
     required this.bottomNavigatorColor,
-    required this.onlineColor,
-    required this.profileBGColor,
+    required this.statusColor,
+    required this.profileBackgroundColor,
     required this.marginTaskColor,
     required this.sendMessageButtonColor,
-    required this.taskUndoneBGColor,
-    required this.taskDoneBGColor,
+    required this.taskUndoneBackgroundColor,
+    required this.taskDoneBackgroundColor,
     required this.taskButtonUndoneColor,
     required this.taskButtonDoneColor,
     required this.filterButtonSelectedColor,
     required this.filterButtonUnselectedColor,
-    required this.badgeSelectedColor,
-    required this.badgeUnselectedColor,
+    required this.unreadMessageSelectedColor,
+    required this.unreadMessageUnselectedColor,
     required this.bottomNavButtonSelectedColor,
     required this.bottomNavButtonUnselectedColor,
     required this.profileButtonAvailableColor,
@@ -64,7 +64,7 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
     required this.whiteIconsColor,
     required this.blackIconsColor,
     required this.greyIconsColor,
-    required this.abilitiesColors,
+    required this.skillsColors,
   });
 
   @override
@@ -75,7 +75,7 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
 
   @override
   ThemeExtension<ColorsThemeExtension> copyWith() {
-    // TODO: implement copyWith
+    //usei o copyWith no custom theme
     throw UnimplementedError();
   }
 }
